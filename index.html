@@ -1,0 +1,214 @@
+<html>
+    <head>
+        <title>Packing Detail</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                padding: 20px 10px;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                border-collapse: collapse;
+            }
+            .container {
+                width: 750px;
+                margin: auto;
+                border: 2px solid black;
+            }
+            .header {
+                background-color: yellow;
+                text-align: center;
+                font-weight: bold;
+                padding: 10px;
+                font-size: 18px;
+            }
+            .info-table, .data-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 10px;
+            }
+            .info-table td, .data-table td, .data-table th {
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+            }
+            .bold {
+                font-weight: bold;
+            }
+            .yellow-bg {
+                background-color: yellow;
+            }
+            /* Product Header Table */
+            .product-table {
+                width: 100%;
+                margin-top: 10px;
+                border-collapse: collapse;
+            }
+            .product-table th {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+                font-weight: bold;
+                background-color: lightgray;
+            }
+            /* Divider Line */
+            .divider {
+                width: 100%;
+                height: 2px;
+                background-color: black;
+                margin: 10px 0;
+            }
+            /* Blank Box Styling */
+            .blank-box {
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+                font-weight: bold;
+            }
+
+
+            <style>
+    .data-table th:nth-child(1), /* S.NO */
+    .data-table td:nth-child(1) {
+        width: 5%; /* Reduce width */
+    }
+    
+    .data-table th:nth-child(2), /* QTY */
+    .data-table td:nth-child(2),
+    .data-table th:nth-child(4), 
+    .data-table td:nth-child(4),
+    .data-table th:nth-child(6), 
+    .data-table td:nth-child(6) {
+        width: 15%; /* Increase width */
+    }
+    
+    .data-table th:nth-child(3), /* SHADE NO */
+.data-table td:nth-child(3),
+.data-table th:nth-child(5),
+.data-table td:nth-child(5),
+.data-table th:nth-child(7),
+.data-table td:nth-child(7) {
+    width: 20%; /* Ensuring equal width */
+}
+
+    
+</style>
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                PACKING DETAIL &nbsp;&nbsp;&nbsp; PH: 9031359720
+            </div>
+            
+            <table class="info-table">
+                <tr>
+                    <td class="bold">PARTY NAME</td>
+                    <td>Aman Tiwari</td>
+                    <td class="bold">DATE</td>
+                    <td>20-03-2025</td>
+                </tr>
+                <tr>
+                    <td class="bold">ADDRESS</td>
+                    <td>123, Main Street, City</td>
+                    <td class="bold">CHALLAN NO</td>
+                    <td>CHL-2025-001</td>
+                </tr>
+                <tr>
+                    <td class="bold">MOB NO</td>
+                    <td>9031359720</td>
+                    <td class="bold">DRIVER NAME</td>
+                    <td>Gourav</td>
+                </tr>
+            </table>
+
+            <table class="data-table">
+                <!-- Blank Three Vertical Line Box -->
+                <tr>
+                    <td colspan="0" class="blank-box"></td>
+                    <td colspan="2" class="blank-box">Mango</td>
+                    <td colspan="2" class="blank-box">Pine Apple</td>
+                    <td colspan="2" class="blank-box">Apple</td>
+
+                </tr>
+
+                <tr class="yellow-bg">
+                    <th>S.NO</th>
+                    <th>QTY</th>
+                    <th>SHADE NO</th>
+                    <th>QTY</th>
+                    <th>SHADE NO</th>
+                    <th>QTY</th>
+                    <th>SHADE NO</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>10</td>
+                    <td>Red-101</td>
+                    <td>15</td>
+                    <td>Blue-202</td>
+                    <td>20</td>
+                    <td>Green-303</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>8</td>
+                    <td>Yellow-111</td>
+                    <td>12</td>
+                    <td>Black-222</td>
+                    <td>18</td>
+                    <td>White-333</td>
+                </tr>
+                <tr class="yellow-bg">
+                    <td class="bold">T.QTY</td>
+                    <td colspan="2" class="bold">58</td>
+                    <td colspan="2" class="bold">75</td>
+                    <td colspan="2" class="bold">90</td>
+                </tr>
+                <tr>
+                    <td class="bold">Price</td>
+                    <td colspan="2">₹ 100</td>
+                    <td colspan="2">₹ 120</td>
+                    <td colspan="2">₹ 150</td>
+                </tr>
+                <tr class="yellow-bg">  
+                    <td class="bold">TOTAL PRICE</td>
+                    <td colspan="2" class="bold">₹ 5800</td>
+                    <td colspan="2" class="bold">₹ 9000</td>
+                    <td colspan="2" class="bold">₹ 13500</td>
+                </tr>
+            </table>
+
+            <table class="info-table">
+                <tr>
+                    <td class="bold" colspan="3">BASIC AMOUNT</td>
+                    <td>₹ 28300</td>
+                    <td class="bold">TOTAL QTY ROLL</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td class="bold" colspan="3">TCS / FARE</td>
+                    <td >₹ 500</td>
+                    <td class="bold">TOTAL WEIGHT</td>
+                    <td>300 KG</td>
+                </tr>
+                <tr>
+                    <td class="bold">INVOICE NO</td>
+                    <td>5252552000</td>
+                    <td class="bold">GST</td>
+                    <td>INV-2025-567</td>
+                    <td class="bold">TOTAL BAGS</td>
+                    <td>10</td>
+                </tr>
+                <tr class="yellow-bg">
+                    <td class="bold" colspan="3">TOTAL AMOUNT</td>
+                    <td>₹ 28800</td>
+                    <td class="bold">RECEIVER NAME</td>
+                    <td>Alex Smith</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
